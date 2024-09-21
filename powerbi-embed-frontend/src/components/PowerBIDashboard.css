@@ -1,0 +1,159 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Header Styles */
+.header {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    margin-right: 15px;
+}
+
+.logo h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+/* Main Content Styles */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.main-content h2 {
+    margin-bottom: 30px;
+    font-size: 2em;
+    color: #003366;
+}
+
+.dashboard-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 800px;
+    border: none;
+}
+
+/* Loading Spinner Styles */
+.spinner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.spinner {
+    border: 8px solid #ccc;
+    border-top: 8px solid #003366;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    animation: spin 1s linear infinite;
+}
+
+/* Keyframes for Spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header, nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .main-content h2 {
+        font-size: 1.5em;
+    }
+
+    .dashboard-container {
+        height: 600px;
+    }
+}
+
+/* src/components/PowerBIDashboard.css */
+
+.dashboard-container {
+    width: 100%;
+    height: 800px;
+    border: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .dashboard-container {
+        height: 600px;
+    }
+}
+
