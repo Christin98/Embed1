@@ -119,7 +119,7 @@ const PowerBIDashboard = () => {
     <div className="dashboard-page">
       <header className="header">
         <div className="logo">
-          <img src="/logo.png" alt="Company Logo" />
+          <img src="FE_logo.png" alt="Company Logo" />
           <h1>Vehicle Analytics</h1>
         </div>
         <nav>

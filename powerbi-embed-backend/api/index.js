@@ -30,6 +30,16 @@ const getAccessToken = async () => {
   params.append('client_secret', CLIENT_SECRET);
   params.append('scope', 'https://analysis.windows.net/powerbi/api/.default');
 
+  const corsOptions = {
+    origin: "https://relogpt.azurewebsites.net", // Only allow this origin
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true, // Enable if you need to include credentials like cookies or authorization headers
+  };
+  
+  app.use(cors(corsOptions));
+  app.options("https://relogpt.azurewebsites.net", cors(corsOptions));
+
   try {
     const response = await axios.post(tokenEndpoint, params);
     return response.data.access_token;
