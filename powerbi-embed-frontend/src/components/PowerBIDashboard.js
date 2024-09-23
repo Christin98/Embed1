@@ -13,7 +13,7 @@ const PowerBIDashboard = () => {
   // Function to fetch embed data from the backend
   const fetchEmbedData = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/embed-dashboard');
+      const response = await fetch('https://embed1.vercel.app//api/embed-dashboard');
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
